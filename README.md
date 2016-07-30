@@ -13,7 +13,7 @@ chatApp task for eventtus challenge
 Fetch dependencies:
     
     cd www/
-    
+
     bower install
 
 Setup server:
