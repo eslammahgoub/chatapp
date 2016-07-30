@@ -1,0 +1,54 @@
+{
+  "users": {
+    "0": {
+      "id": "dardshaws",
+      "name": "Will smith",
+      "email": "will.smith@gmail.com",
+      "state": "on"
+    },
+    "1": {
+      "id": "dardshagc",
+      "name": "gray chair",
+      "email": "gray.chair@gmail.com",
+      "state": "away"
+    },
+    "2": {
+      "id": "dardshamg",
+      "name": "mon green",
+      "email": "mon.green@gmail.com",
+      "state": "busy"
+    },
+    "3": {
+      "id": "dardshasd",
+      "name": "smith daling",
+      "email": "smith.daling@gmail.com",
+      "state": "off"
+    }
+  },
+  "messages": {
+    "0": {
+      "from": "dardshaws",
+      "to": "dardshame",
+      "created_at": "thursday 02",
+      "content": "Hello there"
+    },
+    "1": {
+      "from": "dardshasd",
+      "to": "dardshame",
+      "created_at": "thursday 02",
+      "content": "Hello hi"
+    },
+    "2": {
+      "from": "dardshaws",
+      "to": "dardshame",
+      "created_at": "thursday 03",
+      "content": "Hey I wanna to tell you something"
+    },
+    "3": {
+      "from": "dardshagc",
+      "to": "dardshame",
+      "created_at": "thursday 05",
+      "content": "what is that"
+    },
+  }
+}

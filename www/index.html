@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="chat app eventtus challenge">
+    <meta name="keywords" content="HTML,CSS,angular,JavaScript">
+    <meta name="author" content="Eslam muhammad mahgoub">
+
+    <!-- style files -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+		
+    <!-- app title -->
+    <title>{{title}}</title>
+
+    <!-- prevent flashing unstyling content-->
+    <style type="text/css">
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, x-ng-cloak {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body class="ng-cloak">
+    <div id="chatbox">
+    	<div data-ui-view='contacts'></div>
+        <div data-ui-view='chat'></div>
+    </div>
+
+    <!-- angular lib -->
+    <script src="lib/angular/angular.min.js" charset="utf-8"></script>
+
+    <!-- angular ui-router module -->
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+
+    <!-- angular resource -->
+    <script src="lib/angular-resource/angular-resource.min.js" charset="utf-8"></script>
+
+    <!-- main Module -->
+    <script src="scripts/core/mainModule.js" charset="utf-8"></script>
+
+    <!-- config -->
+    <script src="scripts/config/mainConfig.js" charset="utf-8"></script>
+
+    <!-- boostrapping chat app-->
+    <script src="scripts/core/bootstrap.js" charset="utf-8"></script>
+  </body>
+</html>
