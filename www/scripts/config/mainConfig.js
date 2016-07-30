@@ -36,7 +36,7 @@
           controllerAs: 'contacts'
         }
       },
-      authenticate: true
+      authenticate: true,
       resolve: {
         load: loadContacts
       }
@@ -49,7 +49,7 @@
           controllerAs: 'chat'
         }
       },
-      authenticate: true
+      authenticate: true,
       resolve: {
         load: loadChat
       }
