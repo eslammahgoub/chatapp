@@ -17,6 +17,7 @@
     });
   };
   Run.$inject = ['$rootScope', '$state'];
+  angular.module('chatApp').run(Run);
   /**
    * Configure function to configurate router and location and state
    * @function
