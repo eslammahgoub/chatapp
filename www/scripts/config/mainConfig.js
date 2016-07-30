@@ -19,6 +19,20 @@
   Run.$inject = ['$rootScope', '$state'];
   angular.module('chatApp').run(Run);
   /**
+   * [resolve function for contacts]
+   * @function
+   */
+  loadContacts = function(){
+
+  };
+  /**
+   * resolve function for chat
+   * @function
+   */
+  loadChat = function(){
+
+  };
+  /**
    * Configure function to configurate router and location and state
    * @function
    * @param $stateProvider [state Provider service]
