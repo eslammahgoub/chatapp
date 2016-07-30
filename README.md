@@ -11,11 +11,15 @@ chatApp task for eventtus challenge
 ### Run
 
 Fetch dependencies:
+    
     cd www/
+    
     bower install
 
 Setup server:
+    
     http-server -p "port number" example http-server -p 8080
   
 Now open this URL in your browser:
+    
     http://localhost:8080/www
