@@ -10,6 +10,7 @@
     vm.id = $stateParams.contactId;
     vm.email = '';
     vm.name = '';
+    vm.info = '';
     console.log(vm.id);
 
     /**
@@ -33,6 +34,7 @@
 
     initData.getMessagesById(vm.id).get(function(entries){
       console.log(entries);
+      vm.info = entries;
     });
   };
 
