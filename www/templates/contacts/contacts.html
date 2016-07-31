@@ -1,0 +1,21 @@
+<div id="friendslist">
+    <div id="topmenu">
+        <span class="friends"></span>
+          <span class="chats"></span>
+          <span class="history"></span>
+      </div>
+      <div ng-repeat="(key, value) in contacts.friends | searchContacts: searchName" id="friends">
+        <div class="friend" id="{{value.id}}" ng-click="contacts.getMessages($index)">
+            <img ng-src="{{value.img}}" alt="{{value.img}}"/>
+              <p>
+                <strong ng-bind="value.name"></strong>
+                <br>
+                <span ng-bind="value.email"></span>
+              </p>
+              <div class="status" ng-class="{'available': value.status == 'on' , 'away': value.status == 'away' , 'inactive': value.status == 'off', 'busy': value.status == 'busy'}"></div>
+          </div>
+      </div>
+      <div id="search">
+        <input type="text" id="searchfield" ng-model="searchName" placeholder="Search contacts..." />
+      </div>
+  </div>

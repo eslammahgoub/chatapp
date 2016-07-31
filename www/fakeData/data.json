@@ -2,27 +2,51 @@
   "users": {
     "0": {
       "id": "dardshaws",
-      "name": "Will smith",
-      "email": "will.smith@gmail.com",
-      "state": "on"
+      "name": "Will good",
+      "email": "will.good@gmail.com",
+      "status": "on",
+      "img": "/img/1_copy.jpg",
+      "cover": "/img/timeline1.png"
     },
     "1": {
       "id": "dardshagc",
       "name": "gray chair",
       "email": "gray.chair@gmail.com",
-      "state": "away"
+      "status": "away",
+      "img": "/img/2_copy.jpg",
+      "cover": "/img/timeline1.png"
     },
     "2": {
       "id": "dardshamg",
       "name": "mon green",
       "email": "mon.green@gmail.com",
-      "state": "busy"
+      "status": "busy",
+      "img": "img/3_copy.jpg",
+      "cover": "/img/timeline1.png"
     },
     "3": {
       "id": "dardshasd",
       "name": "smith daling",
       "email": "smith.daling@gmail.com",
-      "state": "off"
+      "status": "off",
+      "img": "/img/4_copy.jpg",
+      "cover": "/img/timeline1.png"
+    },
+    "4": {
+      "id": "dardshagd",
+      "name": "gna doning",
+      "email": "gna.doning@gmail.com",
+      "status": "off",
+      "img": "/img/5_copy.jpg",
+      "cover": "/img/timeline1.png"
+    },
+    "5": {
+      "id": "dardshasd",
+      "name": "devl chaos",
+      "email": "devl.chaos@gmail.com",
+      "status": "off",
+      "img": "/img/4_copy.jpg",
+      "cover": "/img/timeline1.png"
     }
   },
   "messages": {
@@ -49,6 +73,6 @@
       "to": "dardshame",
       "created_at": "thursday 05",
       "content": "what is that"
-    },
+    }
   }
 }
