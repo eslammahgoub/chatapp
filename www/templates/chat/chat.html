@@ -1,0 +1,34 @@
+<div id="chatview" class="p1">
+    <div id="profile" class="animate">
+
+        <div id="close" ui-sref="contacts">
+            <div class="cy s1 s2 s3"></div>
+            <div class="cx s1 s2 s3"></div>
+        </div>
+
+        <img ng-src="{{chat.img}}" class="floatingImg" alt="{{chat.img}}" />
+        <p ng-bind="chat.name" class="animate"></p>
+        <div class="message status" ng-class="{'available': chat.status == 'on' , 'away': chat.status == 'away' , 'inactive': chat.status == 'off', 'busy': chat.status == 'busy'}"></div>
+        <span ng-bind="chat.email"></span>
+
+    </div>
+
+    <div id="chat-messages" ng-repeat="(key, value) in chat.info" class="animate">
+      <label ng-bind="value.created_at"></label>
+
+        <div class="message">
+          <img ng-src="{{value.img}}" alt="value.img"/>
+            <div class="bubble">
+                {{value.content}}
+                <div class="corner"></div>
+                <span ng-bind="value.time"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="sendmessage">
+      <input type="text" placeholder="Send message..." />
+        <button id="send"></button>
+    </div>
+</div>

@@ -54,24 +54,28 @@
       "from": "dardshaws",
       "to": "dardshame",
       "created_at": "thursday 02",
+      "time": "2 mins",
       "content": "Hello there"
     },
     "1": {
       "from": "dardshasd",
       "to": "dardshame",
       "created_at": "thursday 02",
+      "time": "3 mins",
       "content": "Hello hi"
     },
     "2": {
       "from": "dardshaws",
       "to": "dardshame",
       "created_at": "thursday 03",
+      "time": "6 mins",
       "content": "Hey I wanna to tell you something"
     },
     "3": {
       "from": "dardshagc",
       "to": "dardshame",
       "created_at": "thursday 05",
+      "time": "8 mins",
       "content": "what is that"
     }
   }

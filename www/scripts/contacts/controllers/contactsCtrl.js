@@ -21,10 +21,7 @@
     vm.getMessages = function(index) {
       vm.id = vm.friends[index].id;
       console.log(index);
-      console.log(vm.friends[index]);
-      initData.getById(vm.id).get(function(entries){
-        console.log(entries);
-      });
+      console.log(vm.id);
     }
 
     /**

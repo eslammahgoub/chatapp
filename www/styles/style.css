@@ -79,8 +79,8 @@ body {
 	width:40px;
 	border-radius:50%;
 	position:absolute;
-	top:0;
-	left:12px;
+	top:50px;
+	right:120px;
 	border:3px solid #fff;
 }
 .friend p{
@@ -99,6 +99,8 @@ body {
 	font-weight:400;
 	color:#aab8c2;
 }
+
+/**friend status styles**/
 .friend .status{
 	background:#26c281;
 	border-radius:50%;
@@ -109,11 +111,24 @@ body {
 	right:17px;
 }
 
-/**status styles**/
 .friend .status.away{background:#ffce54;}
 .friend .status.inactive{background:#eaeef0;}
 .friend .status.busy{background:#ff5454;}
 
+/**message status styles**/
+.message.status {
+	background:#26c281;
+	border-radius:50%;
+	width:9px;
+	height:9px;
+	position:absolute;
+	top:100px;
+	right:95px;
+}
+
+.message.status.away{background:#ffce54;}
+.message.status.inactive{background:#eaeef0;}
+.message.status.busy{background:#ff5454;}
 /**
  * Search fields styles
  */
@@ -144,7 +159,7 @@ body {
 	position:absolute;
 	top:0;
 	left:0;
-	display:none;
+	display:block;
 	background:#fff;
 }
 
@@ -166,6 +181,7 @@ body {
 	margin:23px 0 0;
 	border-radius:50%;
 }
+
 #profile  p{
 	font-weight:600;
 	font-size:15px;
