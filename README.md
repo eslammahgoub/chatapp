@@ -1,6 +1,6 @@
 # chatapp
-chatApp task for eventtus challenge
-demo (http://demochat-app.surge.sh/)
+  chatApp task for eventtus challenge
+  [demo] (http://demochat-app.surge.sh/)
 
 # requires
 
