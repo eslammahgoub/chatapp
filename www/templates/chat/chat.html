@@ -1,5 +1,5 @@
 <div id="chatview" class="p1">
-    <div id="profile" class="animate">
+    <div id="profile" class="animate" ng-style="{'background': '#fff url(' + chat.cover + ') 0 0 no-repeat'}">
 
         <div id="close" ui-sref="contacts">
             <div class="cy s1 s2 s3"></div>
@@ -13,18 +13,38 @@
 
     </div>
 
-    <div id="chat-messages" ng-repeat="(key, value) in chat.info" class="animate">
-      <label ng-bind="value.created_at"></label>
+    <div>
+      <div id="chat-messages" class="animate">
 
-        <div class="message">
-          <img ng-src="{{chat.img}}" alt="chat.img"/>
-            <div class="bubble">
-                {{value.content}}
-                <div class="corner"></div>
-                <span ng-bind="value.time"></span>
-            </div>
+        <div ng-if="chat.empty">
+          <br>
+            <p class="emptyMessage">
+              No Message yet
+            </p>
         </div>
 
+          <div class="message" ng-repeat="(key, value) in chat.info" ng-class="{'right': value.from == chat.currentUser.id}">
+            <div ng-if="value.from !== chat.currentUser.id">
+              <label ng-bind="value.created_at"></label>
+              <img ng-src="{{chat.img}}" alt="{{chat.img}}"/>
+                <div class="bubble">
+                    {{value.content}}
+                    <div class="corner"></div>
+                    <span ng-bind="value.time"></span>
+                </div>
+            </div>
+              <div ng-if="value.from == chat.currentUser.id">
+                <label ng-bind="value.created_at"></label>
+                <img ng-src="{{chat.imgMe}}" alt="{{chat.imgMe}}"/>
+                  <div class="bubble">
+                      {{value.content}}
+                      <div class="corner"></div>
+                      <span ng-bind="value.time"></span>
+                  </div>
+              </div>
+          </div>
+
+      </div>
     </div>
 
     <div id="sendmessage">

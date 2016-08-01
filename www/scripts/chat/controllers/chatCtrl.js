@@ -10,7 +10,11 @@
     vm.id = $stateParams.contactId;
     vm.email = '';
     vm.name = '';
-    vm.info = '';
+    vm.cover = '';
+    vm.info = {};
+    vm.empty = false;
+    vm.currentUser = '';
+    vm.imgMe = '';
     console.log(vm.id);
 
     /**
@@ -30,12 +34,33 @@
       vm.name  = entries.name;
       vm.img   = entries.img;
       vm.status = entries.status;
+      vm.cover = entries.cover;
     }); //get() returns all the entries
 
-    initData.getMessagesById(vm.id).get(function(entries){
+    /**
+     * get All messages
+     * @param  {[type]} vm.id [description]
+     * @return {[type]}       [description]
+     */
+    initData.getMessagesById(vm.id).get().$promise.then(function(entries) {
       console.log(entries);
-      vm.info = entries;
+      entries = entries.toJSON();
+      if (angular.isObject(entries) && entries.empty === undefined) {
+        vm.info = entries;
+      }else {
+        vm.empty = true
+      }
     });
+
+    /**
+     * get Information of Current User
+     */
+    initData.getAll().get(function(entries){
+      console.log(entries);
+      entries = entries.toJSON();
+      vm.currentUser = entries.currentUser;
+      vm.imgMe = vm.currentUser.img;
+    })
   };
 
   ChatCtrl.$inject = ['$rootScope', '$scope',  '$state', '$stateParams', 'chatService'];

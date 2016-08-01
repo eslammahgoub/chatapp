@@ -55,17 +55,33 @@
             transformResponse: function(data, headersGetter) {
               var items = angular.fromJson(data);
               var result = {};
+              var i = 0;
                 angular.forEach(items.messages, function(value, key) {
                   angular.forEach(value, function(valueOne,keyOne){
                     if(keyOne === 'from' && valueOne === id) {
-                      result =  value;
+                      result[i] = value;
+                      i++;
+                    }else if (keyOne === 'to' && valueOne === id) {
+                      result[i] = value;
+                      i++;
                     }
                   });
                 });
-                return result;
+                if (Object.keys(result).length == 0) {
+                  result.empty = true;
+                  return result;
+                } else {
+                  return result;
+                }
             }
           }
         });
+      },
+      /**
+       * get all data
+       */
+      getAll: function() {
+        return $resource(baseURL);
       }
     };
     return allServices;

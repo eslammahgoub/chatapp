@@ -14,7 +14,7 @@
       "email": "gray.chair@gmail.com",
       "status": "away",
       "img": "/img/2_copy.jpg",
-      "cover": "/img/timeline1.png"
+      "cover": "/img/timeline2.png"
     },
     "2": {
       "id": "dardshamg",
@@ -22,7 +22,7 @@
       "email": "mon.green@gmail.com",
       "status": "busy",
       "img": "img/3_copy.jpg",
-      "cover": "/img/timeline1.png"
+      "cover": "/img/timeline3.jpg"
     },
     "3": {
       "id": "dardshasd",
@@ -41,11 +41,11 @@
       "cover": "/img/timeline1.png"
     },
     "5": {
-      "id": "dardshasd",
+      "id": "dardshadc",
       "name": "devl chaos",
       "email": "devl.chaos@gmail.com",
       "status": "off",
-      "img": "/img/4_copy.jpg",
+      "img": "/img/6_copy.png",
       "cover": "/img/timeline1.png"
     }
   },
@@ -54,7 +54,7 @@
       "from": "dardshaws",
       "to": "dardshame",
       "created_at": "thursday 02",
-      "time": "2 mins",
+      "time": "1 mins",
       "content": "Hello there"
     },
     "1": {
@@ -62,13 +62,12 @@
       "to": "dardshame",
       "created_at": "thursday 02",
       "time": "3 mins",
-      "content": "Hello hi"
+      "content": "Hello hi there"
     },
     "2": {
       "from": "dardshaws",
       "to": "dardshame",
-      "created_at": "thursday 03",
-      "time": "6 mins",
+      "time": "2 mins",
       "content": "Hey I wanna to tell you something"
     },
     "3": {
@@ -77,6 +76,26 @@
       "created_at": "thursday 05",
       "time": "8 mins",
       "content": "what is that"
+    },
+    "4": {
+      "from": "dardshaws",
+      "to": "dardshame",
+      "time": "6 mins",
+      "content": "wht hupp there"
+    },
+    "5": {
+      "from": "dardshame",
+      "to": "dardshaws",
+      "time": "1 mins",
+      "content": "sorry bro"
     }
+  },
+  "currentUser": {
+    "id": "dardshame",
+    "name": "Eslam Mahgoub",
+    "email": "eslam.mahgoub@gmail.com",
+    "status": "on",
+    "img": "/img/avatar.png",
+    "cover": "/img/timeline1.png"
   }
 }
