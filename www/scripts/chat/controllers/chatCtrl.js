@@ -15,6 +15,9 @@
     vm.empty = false;
     vm.currentUser = '';
     vm.imgMe = '';
+    vm.valueInput = '';
+    vm.timeNow = '';
+    vm.dateNow = '';
     console.log(vm.id);
 
     /**
@@ -61,6 +64,23 @@
       vm.currentUser = entries.currentUser;
       vm.imgMe = vm.currentUser.img;
     })
+
+    /**
+     * Send New Message
+     */
+    vm.sendMessage = function() {
+      vm.valueInput = document.querySelector('#messageInput').value;
+      document.querySelector('#messageInput').value = '';
+      vm.timeNow = (new Date).toLocaleTimeString();
+      vm.dateNow = (new Date).toLocaleDateString();
+      newMessage = new initData.getAll();
+      newMessage.messages[Object.keys(newMessage.messages).length + 1].content = vm.valueInput;
+      newMessage.messages[Object.keys(newMessage.messages).length + 1].from = vm.currentUser.id;
+      newMessage.messages[Object.keys(newMessage.messages).length + 1].to = vm.info[0].id;
+      newMessage.messages[Object.keys(newMessage.messages).length + 1].created_at =vm.dateNow;
+      newMessage.messages[Object.keys(newMessage.messages).length + 1].time ="Now";
+      newMessage.$save();
+    };
   };
 
   ChatCtrl.$inject = ['$rootScope', '$scope',  '$state', '$stateParams', 'chatService'];
